@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080c16">
+  <meta name="description" content="COSMOS — a personal space for exploring the universe, physics, and big questions.">
+  <title>COSMOS / LAB — Explore the Unknown</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="COSMOS home"><span class="brand-mark">✳</span> COSMOS <span class="brand-suffix">/ LAB</span></a>
+    <nav aria-label="Main navigation"><a href="#explore">Explore</a><a href="#about">About</a></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow"><span class="status-dot"></span> A PERSONAL SCIENCE JOURNAL</p>
+      <h1>The universe is<br>more <span>strange</span> than you think.</h1>
+      <p class="hero-copy">A growing collection of research, notes, and questions about space and physics — written by a curious mind.</p>
+      <a class="button" href="#explore">Explore the library <span aria-hidden="true">↘</span></a>
+      <div class="cosmic-art" role="img" aria-label="Stylized illustration of a glowing black hole in space">
+        <div class="star star-one"></div><div class="star star-two"></div><div class="star star-three"></div>
+        <div class="black-hole"><div class="hole-core"></div></div>
+        <p class="art-caption">LOOK CLOSER. ASK BETTER QUESTIONS.</p>
+      </div>
+      <div class="hero-stats"><div><strong id="article-count">0</strong><span>articles published</span></div><div><strong>∞</strong><span>questions to ask</span></div><div><strong>01</strong><span>rule: stay curious</span></div></div>
+    </section>
+
+    <section class="library section" id="explore">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE KNOWLEDGE BASE</p><h2>Follow your curiosity.</h2></div>
+        <p class="section-note">Every article is your research.<br>Every source helps tell the story.</p>
+      </div>
+      <label class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search articles, topics, keywords…" autocomplete="off"><kbd>SEARCH</kbd></label>
+      <div class="filters" id="filters" aria-label="Filter by topic">
+        <button class="filter active" data-filter="All">All topics</button>
+        <button class="filter" data-filter="Space">Space</button>
+        <button class="filter" data-filter="Physics">Physics</button>
+        <button class="filter" data-filter="Mysteries">Mysteries</button>
+        <button class="filter" data-filter="Notes">Research notes</button>
+      </div>
+      <div id="article-grid" class="article-grid" aria-live="polite">
+        <div class="empty-state"><span class="loader"></span><p>Opening the knowledge base…</p></div>
+      </div>
+      <p id="result-count" class="result-count"></p>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-card">
+        <p class="eyebrow">WHY COSMOS EXISTS</p>
+        <h2>Curiosity is a skill.<br><span>Keep practising it.</span></h2>
+        <p>COSMOS is an independent learning project for collecting explanations, discoveries, and open questions about our universe. The articles are written and maintained by the site owner.</p>
+        <p class="about-foot">Built slowly. Researched carefully. Always learning.</p>
+      </div>
+    </section>
+  </main>
+  <footer><a class="brand" href="./"><span class="brand-mark">✳</span> COSMOS <span class="brand-suffix">/ LAB</span></a><span>MADE OF QUESTIONS.</span></footer>
+
+  <dialog id="article-dialog" class="article-dialog">
+    <div class="dialog-top"><span class="eyebrow">COSMOS FIELD NOTES</span><button id="close-dialog" class="icon-button" aria-label="Close article">✕</button></div>
+    <article id="article-content" class="prose"></article>
+    <div class="dialog-bottom"><span>Keep questioning what you read.</span><button id="dialog-done" class="button button-small">Back to library</button></div>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>

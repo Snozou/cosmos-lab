@@ -1,0 +1,12 @@
+{
+  "articles": [
+    {
+      "title": "Your first research article",
+      "file": "first-research-article.md",
+      "category": "Notes",
+      "date": "START HERE",
+      "excerpt": "A starter file to show you how to write and publish your own research.",
+      "tags": ["getting started", "research", "sources"]
+    }
+  ]
+}
